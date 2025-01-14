@@ -109,7 +109,7 @@ func main() {
 
 	// регистрация посылки
 	client := 1
-	address := "Псков, д. Пушкина, ул. Колотушкина, д. 5"
+	address := "Тестов, д. Пушкина, ул. Колотушкина, д. 5"
 	p, err := service.Register(client, address)
 	if err != nil {
 		fmt.Println(err)
@@ -117,7 +117,7 @@ func main() {
 	}
 
 	// изменение адреса
-	newAddress := "Саратов, д. Верхние Зори, ул. Козлова, д. 25"
+	newAddress := "Роров, д. Верхние Зори, ул. Козлова, д. 25"
 	err = service.ChangeAddress(p.Number, newAddress)
 	if err != nil {
 		fmt.Println(err)
